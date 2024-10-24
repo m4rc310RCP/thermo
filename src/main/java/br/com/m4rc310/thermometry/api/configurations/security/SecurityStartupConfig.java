@@ -26,7 +26,6 @@ public class SecurityStartupConfig {
 	@Bean
 	MUserProvider loadUserProvider() {
 		return new MUserProvider() {
-			
 			@Override
 			public boolean isValidUser(MUser user) {
 				log.info("{}", user);
@@ -35,10 +34,11 @@ public class SecurityStartupConfig {
 			
 			@Override
 			public MUser getUserFromUsername(String username) {
+				//log.info("{}", username);
 				MUser user = new MUser();
 				user.setUsername(username);
 				user.setPassword(pe.encode("test"));
-				user.setRoles("admin".split(";"));
+				user.setRoles("admin;user".split(";"));
 				return user;
 			}
 			
