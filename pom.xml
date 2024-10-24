@@ -36,7 +36,8 @@
 	</scm>
 
 	<properties>
-		<br-com-m4rc310-starter-version>1.0.1-SNAPSHOT</br-com-m4rc310-starter-version>
+<!--		<br-com-m4rc310-starter-version>1.0.1-SNAPSHOT</br-com-m4rc310-starter-version> -->
+		<br-com-m4rc310-starter-version>1.0.40</br-com-m4rc310-starter-version>
 		<java.version>17</java.version>
 	</properties>
 
