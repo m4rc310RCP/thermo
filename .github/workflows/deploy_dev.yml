@@ -40,4 +40,4 @@ jobs:
           username: ${{ secrets.DOKKU_USER }}
           password: ${{ secrets.DOKKU_PSW }}
           port: 22
-          script: bash ~/scripts/post-deploy
+          script: bash ~/scripts/post-deploy-thermo
