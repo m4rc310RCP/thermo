@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.4</version>
+		<version>3.3.5</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -37,7 +37,7 @@
 
 	<properties>
 <!--		<br-com-m4rc310-starter-version>1.0.1-SNAPSHOT</br-com-m4rc310-starter-version> -->
-		<br-com-m4rc310-starter-version>1.0.40</br-com-m4rc310-starter-version>
+		<br-com-m4rc310-starter-version>1.0.42</br-com-m4rc310-starter-version>
 		<java.version>17</java.version>
 	</properties>
 

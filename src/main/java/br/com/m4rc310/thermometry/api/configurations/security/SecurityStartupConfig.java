@@ -28,13 +28,11 @@ public class SecurityStartupConfig {
 		return new MUserProvider() {
 			@Override
 			public boolean isValidUser(MUser user) {
-				log.info("{}", user);
 				return true;
 			}
 			
 			@Override
 			public MUser getUserFromUsername(String username) {
-				//log.info("{}", username);
 				MUser user = new MUser();
 				user.setUsername(username);
 				user.setPassword(pe.encode("test"));
@@ -44,9 +42,6 @@ public class SecurityStartupConfig {
 			
 			@Override
 			public MUser authUser(String username, Object password) throws Exception {
-				
-				log.info(username);
-				
 				MUser user = getUserFromUsername(username);
 				if (encoder.matches(String.valueOf(password), user.getPassword())) {
 					return user;

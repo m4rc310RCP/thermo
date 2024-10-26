@@ -6,10 +6,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import jakarta.annotation.PostConstruct;
 
 @SpringBootApplication
+@EnableTransactionManagement
 @ComponentScan(basePackages = "br.com.m4rc310.thermometry.api")
 @PropertySource(ignoreResourceNotFound = true, value = "classpath:/security.properties")
 public class App {
