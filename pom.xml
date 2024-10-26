@@ -36,7 +36,8 @@
 	</scm>
 
 	<properties>
-<!--		<br-com-m4rc310-starter-version>1.0.1-SNAPSHOT</br-com-m4rc310-starter-version> -->
+		<!--
+		<br-com-m4rc310-starter-version>1.0.1-SNAPSHOT</br-com-m4rc310-starter-version> -->
 		<br-com-m4rc310-starter-version>1.0.42</br-com-m4rc310-starter-version>
 		<java.version>17</java.version>
 	</properties>
@@ -119,6 +120,19 @@
 					<addResources>true</addResources>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Implementation-Version>${project.version}</Implementation-Version>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

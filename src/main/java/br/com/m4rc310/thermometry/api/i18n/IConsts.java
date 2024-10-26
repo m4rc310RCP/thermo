@@ -12,12 +12,15 @@ public interface IConsts {
 	public static final String DATE$audity_insertion = "${date.audity.insertion}";
 	// @GraphQLQuery(name=DATE$audity_register, description=DESC$date_audity_register)
 	public static final String DATE$audity_register = "${date.audity.register}";
+	// @GraphQLQuery(name=DATE$heart_beat, description=DESC$date_heart_beat)
+	public static final String DATE$heart_beat = "${date.heart.beat}";
 
 	//--------------------------------------------------
 	// ********** DESC **********
 	//--------------------------------------------------
 	public static final String DESC$date_audity_insertion = "${desc.date.audity.insertion}";
 	public static final String DESC$date_audity_register = "${desc.date.audity.register}";
+	public static final String DESC$date_heart_beat = "${desc.date.heart.beat}";
 	public static final String DESC$description_thermo_silo = "${desc.description.thermo.silo}";
 	public static final String DESC$field_thermo_device = "${desc.field.thermo.device}";
 	public static final String DESC$field_thermo_silo = "${desc.field.thermo.silo}";
@@ -34,6 +37,7 @@ public interface IConsts {
 	public static final String DESC$query_request_devices = "${desc.query.request.devices}";
 	public static final String DESC$query_test_app = "${desc.query.test.app}";
 	public static final String DESC$query_verify_device = "${desc.query.verify.device}";
+	public static final String DESC$subscription_info_app = "${desc.subscription.info.app}";
 	public static final String DESC$subscription_request_register_device = "${desc.subscription.request.register.device}";
 	public static final String DESC$subscription_requested_register_device = "${desc.subscription.requested.register.device}";
 	public static final String DESC$type_audited = "${desc.type.audited}";
@@ -103,6 +107,8 @@ public interface IConsts {
 	//--------------------------------------------------
 	// ********** SUBSCRIPTION **********
 	//--------------------------------------------------
+	// @GraphQLSubscription(name=SUBSCRIPTION$info_app, description=DESC$subscription_info_app)
+	public static final String SUBSCRIPTION$info_app = "${subscription.info.app}";
 	// @GraphQLSubscription(name=SUBSCRIPTION$request_register_device, description=DESC$subscription_request_register_device)
 	public static final String SUBSCRIPTION$request_register_device = "${subscription.request.register.device}";
 	// @GraphQLSubscription(name=SUBSCRIPTION$requested_register_device, description=DESC$subscription_requested_register_device)
