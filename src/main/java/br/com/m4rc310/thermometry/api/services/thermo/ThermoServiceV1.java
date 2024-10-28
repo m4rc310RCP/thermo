@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.reactivestreams.Publisher;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +26,7 @@ import reactor.core.publisher.Flux;
 @Slf4j
 @Service
 @GraphQLApi
+@EnableScheduling
 public class ThermoServiceV1 extends MService {
 
 	private Map<String, ThermoDevice> mapRequestDevice = new HashMap<>();
