@@ -27,6 +27,10 @@ public class ThermoDevice implements Serializable, IConsts, IAudited {
 	@GraphQLQuery(name=NAME$manufacturer, description=DESC$name_manufacturer)
 	private String manufacturer;
 	
+	@Column(name = DESCRIPTION$thermo_device, length = 200)
+	@GraphQLQuery(name=DESCRIPTION$thermo_device, description=DESC$description_thermo_device)
+	private String description;
+	
 	@Column(name = NUMBER$audity_register)
 	@GraphQLIgnore
 	private Long numberRegister;

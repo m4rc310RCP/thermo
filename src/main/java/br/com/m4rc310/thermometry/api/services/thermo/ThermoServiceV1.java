@@ -81,15 +81,15 @@ public class ThermoServiceV1 extends MService {
 		
 		ThermoDevice local = thermoDeviceRepository.findById(device.getSerialNumber()).orElse(device);
 		cloneAtoB(local, device);
-		local = thermoDeviceRepository.save(local);
+		device = thermoDeviceRepository.save(device);
 		
-		String serial = local.getSerialNumber();
+		String serial = device.getSerialNumber();
 		mapRequestDevice.remove(serial);
 		
-		callPublishDevice(local);
+		callPublishDevice(device);
 		callListPublishThermoDevice();
 		
-		return local;
+		return device;
 	}
 
 	@MStopConnection

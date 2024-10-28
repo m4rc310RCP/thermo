@@ -21,6 +21,7 @@ public interface IConsts {
 	public static final String DESC$date_audity_insertion = "${desc.date.audity.insertion}";
 	public static final String DESC$date_audity_register = "${desc.date.audity.register}";
 	public static final String DESC$date_heart_beat = "${desc.date.heart.beat}";
+	public static final String DESC$description_thermo_device = "${desc.description.thermo.device}";
 	public static final String DESC$description_thermo_silo = "${desc.description.thermo.silo}";
 	public static final String DESC$field_thermo_device = "${desc.field.thermo.device}";
 	public static final String DESC$field_thermo_silo = "${desc.field.thermo.silo}";
@@ -47,6 +48,8 @@ public interface IConsts {
 	//--------------------------------------------------
 	// ********** DESCRIPTION **********
 	//--------------------------------------------------
+	// @GraphQLQuery(name=DESCRIPTION$thermo_device, description=DESC$description_thermo_device)
+	public static final String DESCRIPTION$thermo_device = "${description.thermo.device}";
 	// @GraphQLQuery(name=DESCRIPTION$thermo_silo, description=DESC$description_thermo_silo)
 	public static final String DESCRIPTION$thermo_silo = "${description.thermo.silo}";
 
