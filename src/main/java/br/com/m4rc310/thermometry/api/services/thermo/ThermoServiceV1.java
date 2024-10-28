@@ -96,7 +96,7 @@ public class ThermoServiceV1 extends MService {
 		mapRequestDevice.remove(serial);
 		
 		callPublishDevice(device);
-		callListPublishThermoDevice();
+		updateRequestDevices();
 		
 		return device;
 	}
