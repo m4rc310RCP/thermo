@@ -13,7 +13,7 @@
 
 	<groupId>br.com.m4rc310.thermometry</groupId>
 	<artifactId>api-thermometry</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>api-thermometry</name>
 
 	<description>API Thermometry - ESP32</description>
