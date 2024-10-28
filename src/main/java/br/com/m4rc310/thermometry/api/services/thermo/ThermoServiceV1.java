@@ -47,6 +47,12 @@ public class ThermoServiceV1 extends MService {
 		return new ArrayList<>(mapRequestDevice.values());
 	}
 	
+	@GraphQLQuery(name=QUERY$list_all_devices, description=DESC$query_list_all_devices)
+	public List<ThermoDevice> listAllDevices(){
+		return thermoDeviceRepository.findAll();
+	}
+	
+	
 	@GraphQLQuery(name=QUERY$verify_device, description=DESC$query_verify_device)
 	public ThermoDevice getThermoDevice(
 			@GraphQLArgument(name=NUMBER$serial, description=DESC$number_serial) String numberSerial

@@ -35,6 +35,7 @@ public interface IConsts {
 	public static final String DESC$number_thermo_silo = "${desc.number.thermo.silo}";
 	public static final String DESC$number_version = "${desc.number.version}";
 	public static final String DESC$query_app_info = "${desc.query.app.info}";
+	public static final String DESC$query_list_all_devices = "${desc.query.list.all.devices}";
 	public static final String DESC$query_request_devices = "${desc.query.request.devices}";
 	public static final String DESC$query_test_app = "${desc.query.test.app}";
 	public static final String DESC$query_verify_device = "${desc.query.verify.device}";
@@ -100,6 +101,8 @@ public interface IConsts {
 	//--------------------------------------------------
 	// @GraphQLQuery(name=QUERY$app_info, description=DESC$query_app_info)
 	public static final String QUERY$app_info = "${query.app.info}";
+	// @GraphQLQuery(name=QUERY$list_all_devices, description=DESC$query_list_all_devices)
+	public static final String QUERY$list_all_devices = "${query.list.all.devices}";
 	// @GraphQLQuery(name=QUERY$request_devices, description=DESC$query_request_devices)
 	public static final String QUERY$request_devices = "${query.request.devices}";
 	// @GraphQLQuery(name=QUERY$test_app, description=DESC$query_test_app)
