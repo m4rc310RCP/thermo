@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.reactivestreams.Publisher;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import br.com.m4rc310.gql.websocket.MStopConnection;
@@ -92,6 +93,7 @@ public class ThermoServiceV1 extends MService {
 		return device;
 	}
 
+	@Scheduled(cron = "*/10 * * * * *")
 	@MStopConnection
 	public void updateRequestDevices() {
 		Class<ThermoDevice> type = ThermoDevice.class;
