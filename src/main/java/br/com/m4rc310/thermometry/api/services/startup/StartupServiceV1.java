@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import br.com.m4rc310.thermometry.api.dto.DtoAppInfo;
 import br.com.m4rc310.thermometry.api.services.MService;
+import io.leangen.graphql.annotations.GraphQLQuery;
 import io.leangen.graphql.annotations.GraphQLSubscription;
 import io.leangen.graphql.spqr.spring.annotations.GraphQLApi;
 import lombok.extern.slf4j.Slf4j;
@@ -49,6 +50,11 @@ public class StartupServiceV1 extends MService {
 	public Publisher<DtoAppInfo> getAppInfo(){
 		return flux.publish(DtoAppInfo.class, KEY_APP_INFO, getDtoAppInfo());
 	} 
+	
+	@GraphQLQuery(name = NUMBER$version, description = DESC$number_version)
+	public String version() {
+		return getVersion();
+	}
 	
     public static String getVersion() {
         try {

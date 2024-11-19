@@ -7,9 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.reactivestreams.Publisher;
-import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
 
 import br.com.m4rc310.gql.websocket.MStopConnection;
 import br.com.m4rc310.thermometry.api.model.thermo.ThermoDevice;
@@ -19,14 +17,12 @@ import io.leangen.graphql.annotations.GraphQLContext;
 import io.leangen.graphql.annotations.GraphQLMutation;
 import io.leangen.graphql.annotations.GraphQLQuery;
 import io.leangen.graphql.annotations.GraphQLSubscription;
-import io.leangen.graphql.spqr.spring.annotations.GraphQLApi;
-import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 
-@Slf4j
-@Service
-@GraphQLApi
-@EnableScheduling
+//@Slf4j
+//@Service
+//@GraphQLApi
+//@EnableScheduling
 public class ThermoServiceV1 extends MService {
 
 	private Map<String, ThermoDevice> mapRequestDevice = new HashMap<>();
